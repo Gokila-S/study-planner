@@ -1,0 +1,20 @@
+
+
+#root {
+  background: #f7fff7;
+  min-height: 100vh;
+  color: #222;
+  font-family: 'Quicksand', 'Segoe UI', 'Arial', sans-serif;
+}
+
+.card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px #e0f2e9;
+  padding: 1.5em;
+  margin: 1em 0;
+}
+
+input, select, textarea, button {
+  font-family: inherit;
+}
