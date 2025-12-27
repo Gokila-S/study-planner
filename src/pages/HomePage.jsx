@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import AuthContext from "../context/AuthContext";
 
 export default function HomePage() {
+  const { isLoggedIn } = useContext(AuthContext);
   return (
     <div className="flex items-center justify-center min-h-[80vh] bg-green-50">
       <section className="w-2/3 max-w-3xl text-center">
@@ -13,7 +16,7 @@ export default function HomePage() {
         </p>
         <div className="flex gap-4 justify-center">
           <Link 
-            to="/login" 
+            to={isLoggedIn ? "/app" : "/login"}
             className="bg-green-500 text-white py-3 px-8 rounded-lg font-semibold hover:bg-green-600 transition shadow-md hover:shadow-lg"
           >
             Start Planning
