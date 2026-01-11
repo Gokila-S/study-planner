@@ -20,7 +20,7 @@ export default function LoginPage() {
             Swal.fire({
                 icon: "success",
                 title: "Login successful",
-                text: "email or password is wrong.",
+                text: "Welcome back!",
             });
             navigate('/app');
         } else {
