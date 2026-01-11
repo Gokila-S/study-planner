@@ -1,16 +1,67 @@
-# React + Vite
+# Study Planner 📚
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional, feature-rich study management application designed to help students and learners organize their academic tasks, track progress, and achieve their learning goals with ease.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User Authentication:** Secure registration and login system.
+- **Study Session Management:** Add and track study tasks with subject, topic, and duration.
+- **Priority Labeling:** Organize tasks by priority (High, Medium, Low).
+- **Session Persistence:** Automatically saves your study data to local storage.
+- **Responsive UI:** Modern, clean, and fully responsive design built with Tailwind CSS.
+- **Interactive Feedback:** Visual notifications for actions like login and task creation using SweetAlert2.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework:** [React 19](https://react.dev/)
+- **Build Tool:** [Vite 7](https://vite.dev/)
+- **Styling:** [Tailwind CSS 4](https://tailwindcss.com/)
+- **Routing:** [React Router 7](https://reactrouter.com/)
+- **State Management:** React Context API
+- **Popups:** [SweetAlert2](https://sweetalert2.github.io/)
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── components/   # Reusable UI components (Card, Header, Footer)
+├── context/      # Context providers for Auth and Todo state
+├── pages/        # Main application views (Login, Register, Dashboard)
+├── services/     # Logic for authentication and data storage
+├── layouts/      # Layout wrappers for consistent page structure
+└── routes/       # Application routing and route protection
+```
+
+## 🚥 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd mini-project-01
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
